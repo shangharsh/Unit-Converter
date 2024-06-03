@@ -528,22 +528,38 @@ namespace UnitConverter
 
         private void BtnConvert_Click(object sender, EventArgs e)
         {
-            num = Convert.ToDouble(TxtNum.Text.ToString());
+
+            //if (ComboUnitType.SelectedIndex == -1 && TxtNum.TextLength <1 && ComboUnit.SelectedIndex == -1 )
+            //{
+            //    MessageBox.Show("Attention, Please Enter Valid Value or Cannot be Empty", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //}
+            //else
+            //{
+            if (TxtNum.Text.ToString() == "")
+            {
+                MessageBox.Show("Attention, Please Enter Valid Value or Cannot be Empty", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else { 
+                num = Convert.ToDouble(TxtNum.Text.ToString());
+            }
+
 
             if (ComboUnitType.SelectedItem == "Length")
-            {
-                CalculateLength();
-            }
-            else if (ComboUnitType.SelectedItem == "Weight")
-            {
-                CalculateWeight();
-            }
-            else if (ComboUnitType.SelectedItem == "Volume")
-            {
-                CalculateVolume();
-            }
+                {
 
+                    CalculateLength();
+                }
+                else if (ComboUnitType.SelectedItem == "Weight")
+                {
 
+                    CalculateWeight();
+                }
+                else if (ComboUnitType.SelectedItem == "Volume")
+                {
+
+                    CalculateVolume();
+                }
+            //}
         }
     }
 }
