@@ -1,0 +1,10 @@
+C:\Users\shang\source\repos\UnitConverter\obj\Debug\UnitConverter.csproj.AssemblyReference.cache
+C:\Users\shang\source\repos\UnitConverter\obj\Debug\UnitConverter.Converter.resources
+C:\Users\shang\source\repos\UnitConverter\obj\Debug\UnitConverter.Properties.Resources.resources
+C:\Users\shang\source\repos\UnitConverter\obj\Debug\UnitConverter.csproj.GenerateResource.cache
+C:\Users\shang\source\repos\UnitConverter\obj\Debug\UnitConverter.csproj.CoreCompileInputs.cache
+C:\Users\shang\source\repos\UnitConverter\bin\Debug\UnitConverter.exe.config
+C:\Users\shang\source\repos\UnitConverter\bin\Debug\UnitConverter.exe
+C:\Users\shang\source\repos\UnitConverter\bin\Debug\UnitConverter.pdb
+C:\Users\shang\source\repos\UnitConverter\obj\Debug\UnitConverter.exe
+C:\Users\shang\source\repos\UnitConverter\obj\Debug\UnitConverter.pdb
