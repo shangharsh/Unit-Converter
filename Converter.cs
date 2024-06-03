@@ -149,12 +149,10 @@ namespace UnitConverter
                 TxtValue7.Text = foot.ToString();
                 TxtValue8.Text = yard.ToString();
             }
-
         }
 
         void CalculateWeight()
         {
-
             if (ComboUnit.SelectedItem == "Gm")
             {
                 pound = num / 453.6;
@@ -195,13 +193,6 @@ namespace UnitConverter
                 pound = num / 16;
                 kg = num / 35.274;
                 mg = num * 28350;
-                //mm = num * 25.4;
-                //cm = num * 2.54;
-                //m = num / 39.37;
-                //km = num / 39370;
-                //foot = num / 12;
-                //yard = num / 36;
-                //mile = num / 63360;
                 TxtValue3.Text = gm.ToString();
                 TxtValue4.Text = pound.ToString();
                 TxtValue5.Text = kg.ToString();
@@ -222,9 +213,67 @@ namespace UnitConverter
 
         void CalculateVolume()
         {
-            MessageBox.Show("Volume Conversion");
-
-
+            //MessageBox.Show("Volume Conversion");
+            if (ComboUnit.SelectedItem == "Liter")
+            {
+                //l = num;
+                ml = num * 1000;
+                cf = num / 28.317;
+                ci = num * 61.024;
+                cubicm = num / 1000;
+                TxtValue3.Text = ml.ToString();
+                TxtValue4.Text = cf.ToString();
+                TxtValue5.Text = ci.ToString();
+                TxtValue6.Text = cubicm.ToString();
+            }
+            else if (ComboUnit.SelectedItem == "Milliliter")
+            {
+                l = num / 1000;
+                //ml = num * 1000;
+                cf = num / 28320;
+                ci = num / 16.387;
+                cubicm = num / 1000000;
+                TxtValue3.Text = l.ToString();
+                TxtValue4.Text = cf.ToString();
+                TxtValue5.Text = ci.ToString();
+                TxtValue6.Text = cubicm.ToString();
+            }
+            else if (ComboUnit.SelectedItem == "Cubic Foot")
+            {
+                l = num * 28.317;
+                ml = num * 28320;
+                //cf = num / 28320;
+                ci = num * 1728;
+                cubicm = num / 35.315;
+                TxtValue3.Text = l.ToString();
+                TxtValue4.Text = ml.ToString();
+                TxtValue5.Text = ci.ToString();
+                TxtValue6.Text = cubicm.ToString();
+            }
+            else if (ComboUnit.SelectedItem == "Cubic Inch")
+            {
+                l = num / 61.024;
+                ml = num * 16.387;
+                cf = num / 1728;
+                //ci = num * 1728;
+                cubicm = num / 61020;
+                TxtValue3.Text = l.ToString();
+                TxtValue4.Text = ml.ToString();
+                TxtValue5.Text = cf.ToString();
+                TxtValue6.Text = cubicm.ToString();
+            }
+            else if (ComboUnit.SelectedItem == "Cubic Meter")
+            {
+                l = num * 1000;
+                ml = num * 1000000;
+                cf = num * 31.315;
+                ci = num * 61020;
+                //cubicm = num / 61020;
+                TxtValue3.Text = l.ToString();
+                TxtValue4.Text = ml.ToString();
+                TxtValue5.Text = cf.ToString();
+                TxtValue6.Text = ci.ToString();
+            }
         }
 
 
